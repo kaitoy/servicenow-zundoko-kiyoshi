@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_152069_zundoko.ZundokoGenerator</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>ZundokoGenerator</name>
+        <script><![CDATA[var ZundokoGenerator = Class.create();
+ZundokoGenerator.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	generate: function() {
+		var random = GlideSecureRandomUtil.getSecureRandomIntBound(100);
+		return random >= 50 ? 'ズン' : 'ドコ';
+	},
+	
+	type: 'ZundokoGenerator'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-14 06:28:07</sys_created_on>
+        <sys_id>3923680a4f6003002fbce9628110c7c2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>ZundokoGenerator</sys_name>
+        <sys_package display_value="Zundoko Kiyoshi" source="x_152069_zundoko">5ca67f314f2003002fbce9628110c76f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zundoko Kiyoshi">5ca67f314f2003002fbce9628110c76f</sys_scope>
+        <sys_update_name>sys_script_include_3923680a4f6003002fbce9628110c7c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-14 07:50:48</sys_updated_on>
+    </sys_script_include>
+</record_update>
